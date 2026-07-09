@@ -309,17 +309,10 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ## 👨‍💻 Author
 
-Created with ❤️ for travel enthusiasts
+Created with ❤️ Muaddh ALSway
 
 ---
 
-## 📞 Support
-
-- 📧 Email: support@travel-mu.com
-- 🐦 Twitter: [@travel_mu](https://twitter.com/travel_mu)
-- 📱 Instagram: [@travel_mu](https://instagram.com/travel_mu)
-
----
 
 ## 🎉 Acknowledgments
 
