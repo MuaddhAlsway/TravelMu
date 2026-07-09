@@ -2,7 +2,7 @@
 
 A modern, interactive travel booking website built with **React** and **Vite**. Browse stunning destinations, discover curated travel packages, and book your next adventure.
 
-**Live Demo:** [Deploy on Vercel](#deployment)
+**Live Demo:** [https://travel-mu-chi.vercel.app/](https://travel-mu-chi.vercel.app/)
 
 ---
 
@@ -51,12 +51,15 @@ travel-mu/
 
 ## 🛠️ Tech Stack
 
-- **Frontend:** React 19.2.7, React DOM 19.2.7
-- **Build Tool:** Vite 8.1.1
-- **Styling:** CSS3 (component-scoped)
-- **Icons:** React Icons (Feather Icons) - 1000+ SVG icons available
-- **Code Quality:** ESLint 10.6.0
-- **Hosting:** Vercel (configured & ready)
+| Technology | Purpose |
+|-----------|---------|
+| <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" width="20" height="20" alt="React"/> **React 19.2.7** | UI Framework |
+| <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" width="20" height="20" alt="React DOM"/> **React DOM 19.2.7** | DOM Rendering |
+| <img src="https://vitejs.dev/logo.svg" width="20" height="20" alt="Vite"/> **Vite 8.1.1** | Build Tool & Dev Server |
+| **CSS3** | Component-scoped Styling |
+| <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg> **React Icons 5.0.1** | 1000+ SVG Icons (Feather, Font Awesome, Bootstrap) |
+| **ESLint 10.6.0** | Code Quality & Linting |
+| <img src="https://vercel.com/favicon.ico" width="20" height="20" alt="Vercel"/> **Vercel** | Hosting & Deployment |
 
 ---
 
