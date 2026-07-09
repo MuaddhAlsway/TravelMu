@@ -3,7 +3,16 @@ import "./Hero.css";
 
 function Hero() {
   const [activeCard, setActiveCard] = useState(null);
+  const scrollToSection = (id) => {
+    const section = document.getElementById(id);
 
+    if (section) {
+      section.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  };
   return (
     <div className="herocontainer">
 
@@ -68,12 +77,27 @@ function Hero() {
         <div className="title1">MUTRAVEL</div>
 
         <div className="nav">
-          <ul>
-            <li>Home</li>
-            <li>Destinations</li>
-            <li>About Us</li>
-            <li>Contact</li>
-          </ul>
+        <ul>
+  <li onClick={() => scrollToSection("home")}>
+    Home
+  </li>
+
+  <li onClick={() => scrollToSection("destinations")}>
+    Destinations
+  </li>
+
+  <li onClick={() => scrollToSection("about")}>
+    About Us
+  </li>
+
+  <li onClick={() => scrollToSection("trips")}>
+    Trips
+  </li>
+
+  <li onClick={() => scrollToSection("contact")}>
+    Contact
+  </li>
+</ul>
         </div>
       </div>
 
