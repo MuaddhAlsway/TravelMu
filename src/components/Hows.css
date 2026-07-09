@@ -1,0 +1,325 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hows {
+    width: 100%;
+    padding: 100px 5%;
+}
+
+
+/* ==========================
+   HEADER
+========================== */
+
+.title {
+    max-width: 900px;
+    margin: 0 auto 80px;
+    text-align: center;
+}
+
+.title h2 {
+    font-size: clamp(2.5rem, 5vw, 4.8rem);
+    line-height: 1.1;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 20px;
+}
+
+.title p {
+    max-width: 650px;
+    margin: 0 auto 35px;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #666;
+}
+
+.title button {
+    padding: 14px 32px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: 0.3s ease;
+    margin: 0 8px;
+}
+
+.title button:first-of-type {
+    background: #111;
+    color: #fff;
+}
+
+.title button:last-of-type {
+    background: #f2f2f2;
+    color: #111;
+}
+
+.title button:hover {
+    transform: translateY(-4px);
+}
+
+
+/* ==========================
+   IMAGE SECTION
+========================== */
+
+.image {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 25px;
+    align-items: stretch;
+}
+
+
+/* BIG IMAGE */
+
+.image > img {
+    width: 100%;
+    height: 750px;
+    object-fit: cover;
+    border-radius: 30px;
+
+    box-shadow:
+        0 20px 40px rgba(0,0,0,.08),
+        0 40px 80px rgba(0,0,0,.08);
+
+    transition: 0.5s ease;
+}
+
+
+/* RIGHT COLUMN */
+
+.image-side {
+    display: grid;
+    grid-template-rows: 260px 180px auto;
+    gap: 25px;
+}
+
+
+/* MEDIUM IMAGE */
+
+.medium-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+
+    box-shadow:
+        0 15px 35px rgba(0,0,0,.08);
+
+    transition: 0.5s ease;
+}
+
+
+/* SMALL IMAGE */
+
+.small-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+
+    box-shadow:
+        0 15px 35px rgba(0,0,0,.08);
+
+    transition: 0.5s ease;
+}
+
+
+/* HOVER */
+
+.image > img:hover,
+.medium-image img:hover,
+.small-image img:hover {
+    transform: scale(1.03);
+}
+
+
+/* ==========================
+   INFO CARD
+========================== */
+
+.container {
+    background: white;
+
+    border-radius: 25px;
+
+    padding: 25px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,.06),
+        0 25px 60px rgba(0,0,0,.08);
+
+    transition: 0.4s ease;
+}
+
+.container:hover {
+    transform: translateY(-8px);
+}
+
+
+/* ICON */
+
+.icon {
+    width: 70px;
+    height: 70px;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    background: #111;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+}
+
+
+/* TEXT */
+
+.text h3 {
+    font-size: 1.3rem;
+    color: #111;
+    margin-bottom: 10px;
+}
+
+.text p {
+    color: #666;
+    line-height: 1.7;
+    font-size: 1rem;
+}
+
+
+/* ==========================
+   LARGE TABLET
+========================== */
+
+@media (max-width: 1100px) {
+
+    .image {
+        grid-template-columns: 1.5fr 1fr;
+    }
+
+    .image > img {
+        height: 650px;
+    }
+
+}
+
+
+/* ==========================
+   TABLET
+========================== */
+
+@media (max-width: 900px) {
+
+    .hows {
+        padding: 80px 5%;
+    }
+
+    .image {
+        grid-template-columns: 1fr;
+    }
+
+    .image > img {
+        height: 500px;
+    }
+
+    .image-side {
+        grid-template-rows: auto auto auto;
+    }
+
+    .medium-image img {
+        height: 300px;
+    }
+
+    .small-image img {
+        height: 220px;
+    }
+
+}
+
+
+/* ==========================
+   MOBILE
+========================== */
+
+@media (max-width: 600px) {
+
+    .hows {
+        padding: 60px 5%;
+    }
+
+    .title {
+        margin-bottom: 50px;
+    }
+
+    .title h2 {
+        font-size: 2.3rem;
+    }
+
+    .title p {
+        font-size: 1rem;
+    }
+
+    .title button {
+        width: 100%;
+        margin: 8px 0;
+    }
+
+    .image {
+        gap: 20px;
+    }
+
+    .image > img {
+        height: 350px;
+        border-radius: 20px;
+    }
+
+    .medium-image img {
+        height: 220px;
+        border-radius: 20px;
+    }
+
+    .small-image img {
+        height: 180px;
+        border-radius: 20px;
+    }
+
+    .container {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .icon img {
+        width: 28px;
+        height: 28px;
+    }
+
+    .text h3 {
+        font-size: 1.15rem;
+    }
+
+}

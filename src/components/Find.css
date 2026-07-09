@@ -1,0 +1,261 @@
+.find {
+    width: 100%;
+    padding: 100px 5%;
+}
+
+
+/* =====================
+   HEADER
+===================== */
+
+.contentfind {
+    max-width: 800px;
+    margin: 0 auto 50px;
+    text-align: center;
+}
+
+.contentfind h2 {
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
+    margin-bottom: 20px;
+    color: #111;
+}
+
+.contentfind p {
+    color: #666;
+    line-height: 1.8;
+    font-size: 1.1rem;
+}
+
+
+/* =====================
+   FILTER BUTTONS
+===================== */
+
+.containerbutton {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.containerbutton ul {
+    list-style: none;
+
+    display: flex;
+    gap: 15px;
+
+    background: #f5f5f5;
+
+    padding: 10px;
+
+    border-radius: 60px;
+}
+
+.containerbutton li {
+    padding: 12px 24px;
+
+    border-radius: 50px;
+
+    cursor: pointer;
+
+    transition: .3s ease;
+}
+
+.containerbutton li:hover {
+    background: black;
+    color: white;
+}
+
+
+/* =====================
+   IMAGE GRID
+===================== */
+
+.imagecontainer {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 25px;
+}
+
+
+/* CARD */
+
+.imageitem {
+    position: relative;
+
+    height: 450px;
+
+    overflow: hidden;
+
+    border-radius: 25px;
+
+    cursor: pointer;
+}
+
+
+.imageitem img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: .6s ease;
+}
+
+
+.imageitem:hover img {
+    transform: scale(1.08);
+}
+
+
+/* OVERLAY */
+
+.imageoverlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    padding: 25px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: flex-end;
+
+    background:
+    linear-gradient(
+        transparent,
+        rgba(0,0,0,.85)
+    );
+
+}
+
+
+.price {
+
+    color: white;
+
+    margin-bottom: 15px;
+
+    font-size: .95rem;
+
+    font-weight: 500;
+
+}
+
+
+.bottomcontent {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+}
+
+
+.bottomcontent h3 {
+
+    color: white;
+
+    margin-bottom: 8px;
+
+    font-size: 1.3rem;
+
+}
+
+
+.bottomcontent p {
+
+    color: rgba(255,255,255,.85);
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+}
+
+
+.bottomcontent button {
+
+    width: 55px;
+
+    height: 55px;
+
+    border-radius: 50%;
+
+    border: none;
+
+    background: white;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    cursor: pointer;
+
+    transition: .3s ease;
+
+}
+
+
+.bottomcontent button:hover {
+
+    background: black;
+
+    color: white;
+
+}
+
+
+
+/* =====================
+   RESPONSIVE
+===================== */
+
+@media (max-width: 1200px) {
+
+    .imagecontainer {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+
+
+@media (max-width: 900px) {
+
+    .imagecontainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .imageitem {
+        height: 400px;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .imagecontainer {
+        grid-template-columns: 1fr;
+    }
+
+    .imageitem {
+        height: 350px;
+    }
+
+    .containerbutton ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+}

@@ -1,0 +1,220 @@
+/* =====================
+   TESTIMONIAL 3D
+===================== */
+
+
+.testimonial {
+
+    width:100%;
+
+    padding:100px 0;
+
+    background:#050505;
+
+    color:white;
+
+    overflow:hidden;
+
+}
+
+
+
+.testimonial h2 {
+
+    text-align:center;
+
+    font-size:clamp(2rem,5vw,4rem);
+
+    margin-bottom:70px;
+
+}
+
+
+
+
+.testimonial-wrapper {
+
+    width:100%;
+
+    overflow:hidden;
+
+    perspective:1200px;
+
+}
+
+
+
+.testimonial-track {
+
+
+    display:flex;
+
+    gap:30px;
+
+    width:max-content;
+
+
+    animation:
+
+        scroll 25s linear infinite;
+
+
+    transform-style:preserve-3d;
+
+}
+
+
+
+.testimonial-card {
+
+
+    width:350px;
+
+    min-height:250px;
+
+
+    background:
+
+    linear-gradient(
+        145deg,
+        #1b1b1b,
+        #080808
+    );
+
+
+    border-radius:30px;
+
+
+    padding:35px;
+
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+
+    box-shadow:
+
+    0 30px 80px rgba(0,0,0,.5);
+
+
+    transform:
+
+    rotateY(-15deg)
+    translateZ(50px);
+
+
+    transition:.5s ease;
+
+}
+
+
+
+.testimonial-card:hover {
+
+
+    transform:
+
+    rotateY(0deg)
+    translateY(-20px)
+    scale(1.05);
+
+
+}
+
+
+
+
+.testimonial-card p {
+
+
+    color:#ddd;
+
+    font-size:1.1rem;
+
+    line-height:1.7;
+
+    margin-bottom:25px;
+
+}
+
+
+
+.testimonial-card h3 {
+
+
+    margin:0;
+
+    font-size:1.3rem;
+
+}
+
+
+
+.testimonial-card span {
+
+
+    color:#888;
+
+    margin-top:8px;
+
+}
+
+
+
+
+
+/* Infinite movement */
+
+
+@keyframes scroll {
+
+
+    from {
+
+        transform:translateX(0);
+
+    }
+
+
+    to {
+
+        transform:translateX(-50%);
+
+    }
+
+
+}
+
+
+
+/* Pause hover */
+
+
+.testimonial-wrapper:hover .testimonial-track {
+
+    animation-play-state:paused;
+
+}
+
+
+
+
+/* Mobile */
+
+
+@media(max-width:600px){
+
+
+    .testimonial-card {
+
+        width:280px;
+
+        min-height:220px;
+
+    }
+
+
+}
