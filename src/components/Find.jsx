@@ -91,6 +91,7 @@ function Find() {
             <img
               src={trip.image}
               alt={trip.title}
+              loading="lazy"
             />
 
             <div className="imageoverlay">

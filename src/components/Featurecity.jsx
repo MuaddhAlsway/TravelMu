@@ -20,7 +20,7 @@ function Featurecity() {
 
           <div className="feature-city-long image-card">
 
-            <img src={cityMain} alt="Featured city" />
+            <img src={cityMain} alt="Featured city" loading="lazy" />
 
             <button className="city-arrow">
               <FiArrowRight />
@@ -35,7 +35,7 @@ function Featurecity() {
 
             <div className="image-grid-item image-card">
 
-              <img src={city1} alt="City 1" />
+              <img src={city1} alt="City 1" loading="lazy" />
 
               <button className="city-arrow">
                 <FiArrowRight />
@@ -47,20 +47,7 @@ function Featurecity() {
 
             <div className="image-grid-item image-card">
 
-              <img src={city2} alt="City 2" />
-
-              <button className="city-arrow">
-                <FiArrowRight />
-              </button>
-
-            </div>
-
-
-
-
-            <div className="image-grid-item image-card">
-
-              <img src={city3} alt="City 3" />
+              <img src={city2} alt="City 2" loading="lazy" />
 
               <button className="city-arrow">
                 <FiArrowRight />
@@ -73,7 +60,20 @@ function Featurecity() {
 
             <div className="image-grid-item image-card">
 
-              <img src={city4} alt="City 4" />
+              <img src={city3} alt="City 3" loading="lazy" />
+
+              <button className="city-arrow">
+                <FiArrowRight />
+              </button>
+
+            </div>
+
+
+
+
+            <div className="image-grid-item image-card">
+
+              <img src={city4} alt="City 4" loading="lazy" />
 
               <button className="city-arrow">
                 <FiArrowRight />
@@ -138,6 +138,7 @@ function Featurecity() {
             <img 
               src={cityImage}
               alt="Beautiful city destination"
+              loading="lazy"
             />
 
           </div>

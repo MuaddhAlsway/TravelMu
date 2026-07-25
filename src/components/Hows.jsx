@@ -29,26 +29,26 @@ function Hows() {
       <div className="image">
 
         {/* Big Image */}
-        <img src={travel1} alt="Travel Destination" />
+        <img src={travel1} alt="Travel Destination" loading="lazy" />
 
 
         {/* Right Side */}
         <div className="image-side">
 
           <div className="medium-image">
-            <img src={travel2} alt="Travel Destination" />
+            <img src={travel2} alt="Travel Destination" loading="lazy" />
           </div>
 
 
           <div className="small-image">
-            <img src={travel3} alt="Travel Destination" />
+            <img src={travel3} alt="Travel Destination" loading="lazy" />
           </div>
 
 
           <div className="container">
 
             <div className="icon">
-              <img src={plane} alt="Plane" />
+              <img src={plane} alt="Plane" loading="lazy" />
             </div>
 
             <div className="text">
